@@ -1,0 +1,18 @@
+:root {
+  // --c-brand: #FC4246 !important;
+}
+
+#app {
+  // home
+  .home .hero img {
+    border-radius: 1rem;
+  }
+  .navbar .logo {
+    border-radius: 4px;
+  }
+  .navbar-links {
+    .navbar-links-item:last-child {
+      display: none;
+    }
+  }
+}

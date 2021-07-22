@@ -1,14 +1,11 @@
 ---
 home: true
-heroImage: images/logo.png
-heroText: 一点
+heroImage: images/hero-img.png
+heroText: 一点·用户产品研发部
 tagline: 前端技术团队
 actions:
   - text: 学一学
-    link: /vue/
+    link: /frontend/vue/
     type: primary
-  - text: 项目简介
-    link: /guide/
-    type: secondary
 footer: MIT Licensed | Copyright © 2021 yidian
 ---
