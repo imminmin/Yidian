@@ -1,0 +1,1 @@
+const e={key:"v-1540495a",path:"/rule/",title:"技术博文分享规范事项",lang:"zh-CN",frontmatter:{title:"技术博文分享规范事项"},excerpt:"",headers:[{level:2,title:"资料",slug:"资料",children:[]}],filePathRelative:"rule/README.md",git:{updatedTime:1626949143e3,contributors:[{name:"wuhuimin",email:"wuhuimin@yidian-inc.com",commits:1}]}};export{e as data};
