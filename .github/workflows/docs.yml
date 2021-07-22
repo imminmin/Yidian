@@ -31,14 +31,3 @@ jobs:
           commit_message: ${{ github.event.head_commit.message }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Deploy Server 🚀
-        uses: burnett01/rsync-deployments@4.1
-        with:
-          switches: -avzr --delete
-          path: docs/.vuepress/dist/
-          remote_path: ${{ secrets.SERVER_TARGET }}
-          remote_host: ${{ secrets.SERVER_IP }}
-          remote_port: ${{ secrets.SERVER_PORT }}
-          remote_user: ${{ secrets.SSH_USERNAME }}
-          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
