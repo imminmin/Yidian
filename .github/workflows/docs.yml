@@ -1,5 +1,6 @@
 name: docs
 on:
+  # 每当 push 到 main 分支时触发部署
   push:
     branches:
       - main
@@ -25,10 +26,11 @@ jobs:
       - name: Deploy Github 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.PAGES_TOKEN }}
           publish_dir: docs/.vuepress/dist
-          cname: docs.shanyuhai.top
+          target_branch: gh-pages
           commit_message: ${{ github.event.head_commit.message }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy Server 🚀
         uses: burnett01/rsync-deployments@4.1
