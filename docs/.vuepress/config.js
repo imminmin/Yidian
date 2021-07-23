@@ -17,7 +17,7 @@ module.exports = {
   title: "一点",
   description: "一点前端技术",
   head: [['link', { rel: 'icon', href: '/images/favicon.ico' }]],
-  base: '/yidian/',
+  base: '/Yidian/',
   plugins: pluginConf,
 
   themeConfig: {
