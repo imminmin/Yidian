@@ -5,6 +5,7 @@ module.exports = [
     children: [
       { text: "Vue", link: "/frontend/vue/" },
       { text: "Vite", link: "/frontend/vite/" },
+      { text: "Node", link: "/frontend/node/" },
     ],
   },
   {
