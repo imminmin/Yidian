@@ -14,14 +14,30 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: Install and Build 🔧
+      # 缓存 node_modules
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+            
+      # 如果缓存没有命中，安装依赖
+      - name: Install dependencies
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn --frozen-lockfile
+        
+      # 运行构建脚本
+      - name: Build 🔧
         env:
           TZ: Asia/Shanghai
         run: |
           export GOOGLE_GA=${{ secrets.GOOGLE_GA }} GOOGLE_SEARCH_CONSOLE=${{ secrets.GOOGLE_SEARCH_CONSOLE }}
           git --no-pager log --oneline -n 20
-          npm install
-          npm run docs:build
+          yarn docs:build
 
       - name: Deploy Github 🚀
         uses: peaceiris/actions-gh-pages@v3
