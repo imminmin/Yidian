@@ -1,1 +1,0 @@
-import{o as a,c as e,a as r,b as n}from"./app.a3fcea8b.js";const s={},t={id:"日报项目",tabindex:"-1"},d=r("a",{class:"header-anchor",href:"#日报项目","aria-hidden":"true"},"#",-1),o=n(" 日报项目");s.render=function(r,n){return a(),e("h2",t,[d,o])};export default s;

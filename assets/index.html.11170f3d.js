@@ -1,1 +1,0 @@
-const e={key:"v-6c8a4825",path:"/project/daily/",title:"项目介绍",lang:"zh-CN",frontmatter:{title:"项目介绍"},excerpt:"",headers:[{level:2,title:"日报项目",slug:"日报项目",children:[]}],filePathRelative:"project/daily/README.md",git:{updatedTime:1626949143e3,contributors:[{name:"wuhuimin",email:"wuhuimin@yidian-inc.com",commits:1}]}};export{e as data};
