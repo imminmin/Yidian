@@ -1,0 +1,1 @@
+const e={key:"v-de14492e",path:"/frontend/node/",title:"Node-caosaiq",lang:"zh-CN",frontmatter:{title:"Node-caosaiq"},excerpt:"",headers:[],filePathRelative:"frontend/node/README.md",git:{updatedTime:1627023212e3,contributors:[]}};export{e as data};
