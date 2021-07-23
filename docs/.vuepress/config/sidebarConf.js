@@ -10,6 +10,17 @@ module.exports = {
       ]
     }
   ],
+  "/frontend/node/": [
+    {
+      "text": "Node",
+      "title": "Node",
+      "collapsable": false,
+      "sidebarDepth": 1,
+      "children": [
+        "README.md"
+      ]
+    }
+  ],
   "/project/daily/": [
     {
       "text": "Daily",
