@@ -2,12 +2,7 @@
 title: Vue3 RFC
 sidebarDepth: 2
 ---
-
-> 个人认为在学 Vue3 前先来拜读一下 RFC 可能比较好，为什么要这么做？
->
-> 我 Vue2 没有好好学，Vue3 也还没有开始看，信我你就错了。
->
-> [抄一遍原文](https://composition-api.vuejs.org/zh/)。
+> [官方介绍](https://composition-api.vuejs.org/zh/)。
 
 
 
@@ -28,18 +23,18 @@ sidebarDepth: 2
 
 <script>
 import { reactive, computed } from "vue"
-  
+
 export default {
   setup() {
     const state = reactive({
       count: 0,
       double: computed(() => state.count * 2)
     })
-    
+
     function increment() {
       state.count++
     }
-    
+
     return {
       state,
       increment
@@ -200,7 +195,7 @@ function computed(getter) {
   watchEffect(() => {
     ref.value = getter()
   })
-  
+
   return ref
 }
 ```
@@ -424,10 +419,10 @@ function useCreateFloder(openFolder) {
 	// 原来的数据是 property
   const showNewFolder = ref(false)
   const newFolderName = ref('')
-  
+
   // 原来的计算属性
   const newFolderValid = computed(() => isValidMutiName(newFolderName.value))
-  
+
   // 原来的一个方法
   async function createFolder() {
     if (!newFolderName.value) return
@@ -441,7 +436,7 @@ function useCreateFloder(openFolder) {
     newFolderName.value = ''
     showNewFolder.value = false
   }
-  
+
   return {
     showNewFolder,
     newFolderName,
@@ -496,7 +491,7 @@ export default {
   setup() {
     // 网络状态
     const { networkState } = useNetworkState()
-    
+
     // 文件夹状态
     const { folders, currentFolderData } = useCurrentFolderData(networkState)
     const folderNavigation = useFolderNavigation({
@@ -508,14 +503,14 @@ export default {
     )
     const { showHiddenFolders } = useHiddenFolders()
     const createFolder = useCreateFolder(folderNavigation.openFolder)
-    
+
     // 当前工作目录
     resetCwdOnLeave()
     const { updateOnCwdChanged } = useCwdUtils()
-    
+
     // 实用工具
     const { slicePath } = usePathUtils()
-    
+
     return {
       networkState,
       folders,
@@ -707,7 +702,7 @@ function useMousePosition() {
 		x: 0,
     y: 0
   })
-  
+
   return pos
 }
 
@@ -717,12 +712,12 @@ export default {
     // 这里会丢失响应性！
     const { x, y } = useMousePosition()
     return { x, y}
-    
+
     // 这里会丢失响应性！
     return {
       ...useMousePosition()
     }
-    
+
     // 这是保持响应性的唯一办法！
     // 你必须返回 `pos` 本身，并按 `pos.x` 和 `pos.y` 的方式在模板中引用 x 和 y
     return {
@@ -740,7 +735,7 @@ function useMousePosition() {
     x: 0,
     y: 0
   })
-  
+
   return toRefs(pos)
 }
 
@@ -881,12 +876,12 @@ export default {
 ```html
 <script>
 import { onMount } from 'svelte'
-  
+
 let count = 0;
 function increment() {
   count++
 }
-  
+
 $: console.log(count)
 
 onMount(() => console.log('mounted!'))

@@ -1,8 +1,8 @@
 module.exports = {
-  "/frontend/vite/": [
+  "/frontend/node/": [
     {
-      "text": "Vite",
-      "title": "Vite",
+      "text": "Node",
+      "title": "Node",
       "collapsable": false,
       "sidebarDepth": 1,
       "children": [
@@ -10,10 +10,10 @@ module.exports = {
       ]
     }
   ],
-  "/frontend/node/": [
+  "/frontend/vite/": [
     {
-      "text": "Node",
-      "title": "Node",
+      "text": "Vite",
+      "title": "Vite",
       "collapsable": false,
       "sidebarDepth": 1,
       "children": [
