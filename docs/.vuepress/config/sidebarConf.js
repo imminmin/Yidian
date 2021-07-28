@@ -17,7 +17,8 @@ module.exports = {
       "collapsable": false,
       "sidebarDepth": 1,
       "children": [
-        "README.md"
+        "README.md",
+        "compare-with-others.md"
       ]
     }
   ],
@@ -53,7 +54,7 @@ module.exports = {
       "sidebarDepth": 1,
       "children": [
         "README.md",
-        "创建.md"
+        "技术博文分享规范事项.md"
       ]
     }
   ]

@@ -8,7 +8,7 @@ sidebarDepth: 2
 
 ## 概述
 
-在此我们将为您介绍 Composition API：一组低侵入式的、函数式的 API，使得我们能够更灵活的「组合」组件的逻辑。
+Composition API：一组低侵入式的、函数式的 API，使得我们能够更灵活的「组合」组件的逻辑。
 
 
 

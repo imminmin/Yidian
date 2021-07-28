@@ -16,10 +16,10 @@ module.exports = [
   },
   {
     text: "规范",
-    link: "/rule/"
-    // children: [
-    //   { text: "Vue", link: "/rule/new-page/" },
-    // ],
+    // link: "/rule/",
+    children: [
+      { text: "技术博文分享规范事项", link: "/rule/技术博文分享规范事项.md" },
+    ],
   },
   {
     text: "更多",
