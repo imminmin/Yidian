@@ -1,0 +1,1 @@
+const e={key:"v-1b73f15e",path:"/rule/%E6%8A%80%E6%9C%AF%E5%8D%9A%E6%96%87%E5%88%86%E4%BA%AB%E8%A7%84%E8%8C%83%E4%BA%8B%E9%A1%B9.html",title:"技术博文分享规范事项",lang:"zh-CN",frontmatter:{title:"技术博文分享规范事项"},excerpt:"",headers:[{level:2,title:"1. 创建",slug:"_1-创建",children:[]}],filePathRelative:"rule/技术博文分享规范事项.md",git:{updatedTime:1627457869e3,contributors:[]}};export{e as data};

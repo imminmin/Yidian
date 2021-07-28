@@ -1,1 +1,0 @@
-const e={key:"v-ff2cdb2e",path:"/rule/%E5%88%9B%E5%BB%BA.html",title:"创建",lang:"zh-CN",frontmatter:{title:"创建",sidebarDepth:2},excerpt:"",headers:[{level:2,title:"资料",slug:"资料",children:[]}],filePathRelative:"rule/创建.md",git:{updatedTime:1626949143e3,contributors:[]}};export{e as data};

@@ -1,0 +1,1 @@
+import{o as a,c as r,a as e,b as n}from"./app.cac75193.js";const s={},t={id:"_1-创建",tabindex:"-1"},c=e("a",{class:"header-anchor",href:"#_1-创建","aria-hidden":"true"},"#",-1),d=n(" 1. 创建");s.render=function(e,n){return a(),r("h2",t,[c,d])};export default s;

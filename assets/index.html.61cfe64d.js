@@ -1,1 +1,0 @@
-import{o as a,c as r,a as e,b as n}from"./app.a1ab7c7f.js";const s={},t={id:"资料",tabindex:"-1"},d=e("a",{class:"header-anchor",href:"#资料","aria-hidden":"true"},"#",-1),o=n(" 资料");s.render=function(e,n){return a(),r("h2",t,[d,o])};export default s;
